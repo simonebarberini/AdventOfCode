@@ -24,15 +24,6 @@ def separa_colonne_da_file(file_path):
     
 
 
-
-""" def scrivi_file(lista, nomeFile):
-    with open(nomeFile, "w") as file:
-        for item in lista:
-            file.write(f"{item}\n")
-     """
-
-
-
 def minimo_lista(list):
     minimo = list[0]
     for elemento in list:
@@ -40,3 +31,11 @@ def minimo_lista(list):
             minimo = elemento
     return minimo
 
+
+def calcola_occorrenze(list, number):
+    i = 0
+    occ = 0
+    for i in range(len(list)):
+        if list[i] == number:
+            occ+=1
+    return occ
